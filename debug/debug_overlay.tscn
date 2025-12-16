@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmk3bh3n2unle"]
+
+[ext_resource type="Script" uid="uid://c2qb144s655it" path="res://debug/debug_overlay.gd" id="1_xbgyx"]
+
+[node name="DebugOverlay" type="CanvasLayer"]
+script = ExtResource("1_xbgyx")
+
+[node name="JumpVelocityLine" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.0059538702, 0.89927876, 0.3795585, 1)
