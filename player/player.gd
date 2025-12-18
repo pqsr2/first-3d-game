@@ -52,3 +52,15 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 	vertical_velocity_sample.emit(velocity.y)
+	
+	if Input.is_action_pressed("shoot") and %ShootTimer.is_stopped():
+		shoot_bullet()
+
+func shoot_bullet():
+	const BULLET = preload("res://player/bullete_3d.tscn")
+	var new_bullet: Area3D = BULLET.instantiate()
+	
+	%Marker3D.add_child(new_bullet)
+	new_bullet.global_transform = %Marker3D.global_transform
+	
+	%ShootTimer.start()

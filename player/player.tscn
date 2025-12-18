@@ -20,6 +20,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2942952, 0)
 [node name="gun_model" parent="Camera3D" instance=ExtResource("1_oul6g")]
 transform = Transform3D(-0.39326248, 0, 0.073107034, 0, 0.4, 0, -0.073107034, 0, -0.39326248, 0.65, -0.25, -0.6630373)
 
+[node name="Marker3D" type="Marker3D" parent="Camera3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6830773, -0.2510774, -0.8828782)
+
 [node name="Reticle" type="TextureRect" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
@@ -34,3 +38,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_g1dw6")
 expand_mode = 1
+
+[node name="ShootTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.2
+one_shot = true
