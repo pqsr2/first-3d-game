@@ -1,12 +1,12 @@
 extends CanvasLayer
 
-var vertical_velocity_buffer = []
-var max_samples = 60
-var chart_origin = Vector2(50, 50)
-var chart_size = Vector2(100, 100)
-var max_velocity = 20
-var min_velocity = -20
-var x_step = 1
+var vertical_velocity_buffer: Array[Variant] = []
+var max_samples: int = 60
+var chart_origin: Vector2 = Vector2(50, 50)
+var chart_size: Vector2 = Vector2(100, 100)
+var max_velocity: int = 20
+var min_velocity: int = -20
+var x_step: int = 1
 
 func map_velocity_to_screen(sample: float):
 	return remap(sample, min_velocity, max_velocity, chart_origin.y + chart_size.y, chart_origin.y)

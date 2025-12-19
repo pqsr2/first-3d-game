@@ -1,10 +1,10 @@
 extends Area3D
 
 
-const SPEED = 55.0 # m/s
-const RANGE = 40.0 # m
+const SPEED: float = 55.0 # m/s
+const RANGE: float = 40.0 # m
 
-var travelled_distance = 0.0
+var travelled_distance: float = 0.0
 
 func _physics_process(delta: float) -> void:
 	position += - transform.basis.z * SPEED * delta
