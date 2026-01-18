@@ -22,7 +22,7 @@ transform = Transform3D(-0.39326248, 0, 0.073107034, 0, 0.4, 0, -0.073107034, 0,
 
 [node name="Marker3D" type="Marker3D" parent="Camera3D"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6830773, -0.2510774, -0.8828782)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.6830773, -0.2510774, -0.8828782)
 
 [node name="Reticle" type="TextureRect" parent="."]
 anchors_preset = 8
